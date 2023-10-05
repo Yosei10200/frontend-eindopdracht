@@ -1,0 +1,140 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+main {
+    background-color: #f4f4f4;
+}
+
+/*navigation*/
+
+nav {
+    background-color: white;
+    gap: 600px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 100px;
+    margin-left: 100px;
+
+}
+
+nav a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+.navigation {
+    display: flex;
+    margin-right: 100px;
+}
+
+/*header*/
+
+header {
+    text-align: center;
+    background-image: url(../images/nintendoBack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    border-bottom: black solid;
+}
+
+h1 {
+    margin: 0px;
+    padding-top: 100px;
+}
+
+header p {
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+/*section 1 products*/
+h2 {
+    margin-top: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+article img {
+    height: 20vh;
+    width: 20vw;
+    object-fit: contain;
+    /* object-fit: cover; Ziet er niet uit */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateY(-20%);
+}
+
+.stars {
+    display: flex;
+}
+
+.checked {
+    color: orange;
+
+}
+
+.section1 {
+    background-color: white;
+}
+
+/*section 2 forms*/
+
+h4 {
+    text-align: center;
+}
+
+.flexName {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 15vw;
+    height: 4vh;
+    border-radius: 5px;
+
+}
