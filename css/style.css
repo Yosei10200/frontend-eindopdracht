@@ -122,7 +122,7 @@ h3 {
 
 article {
     & img {
-        height: 20vh;
+        height: 30vh;
         width: 22vw;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -226,7 +226,6 @@ h4 {
 
 .flexName {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
 
