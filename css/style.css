@@ -23,28 +23,28 @@ nav {
     gap: 600px;
     display: flex;
     justify-content: space-between;
-}
 
-nav img {
-    width: 100px;
-    margin-left: 100px;
+    & a {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+    }
 
-}
+    & img {
+        width: 100px;
+        margin-left: 100px;
+    }
 
-nav a {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-top: 26px;
-    margin-bottom: 26px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-}
+    & a:hover {
+        background-color: lightgray;
+    }
 
-nav a:hover {
-    background-color: lightgray;
 }
 
 .navigation {
@@ -59,6 +59,11 @@ nav a:hover {
 }
 
 /*header*/
+h1 {
+    margin: 0px;
+    font-size: 2.5rem;
+    padding-top: 120px;
+}
 
 header {
     text-align: center;
@@ -69,41 +74,35 @@ header {
     height: 85vh;
     border-bottom: black solid;
     border-top: 2px solid black;
-}
 
-h1 {
-    margin: 0px;
-    font-size: 40px;
-    padding-top: 120px;
-}
+    & p {
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
-header p {
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 40px;
-    text-align: center;
-}
+    & a {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 10px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
+    }
 
-header a {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 10px;
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-}
-
-header a:hover {
-    background-color: #494949;
-    color: white;
+    & a:hover {
+        background-color: #494949;
+        color: white;
+    }
 }
 
 
 /*section 1 products*/
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 0px;
     padding-top: 50px;
     text-align: center;
@@ -121,16 +120,43 @@ h3 {
     gap: 30px;
 }
 
-article img {
-    height: 20vh;
-    width: 22vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    object-fit: contain;
-    /* object-fit: cover; Ziet er niet uit */
-    border-bottom: 1px solid black;
-}
+article {
+    & img {
+        height: 20vh;
+        width: 22vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        object-fit: contain;
+        /* object-fit: cover; Ziet er niet uit */
+        border-bottom: 1px solid black;
+    }
 
+    & a {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        margin-left: 20px;
+        border-radius: 5px;
+        background-color: #494949;
+        text-decoration: none;
+
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+
+    & p {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 20vw;
+    }
+
+    & ul {
+        margin-top: 0;
+    }
+}
 
 
 .product {
@@ -138,57 +164,30 @@ article img {
     flex-direction: column;
     border: 2px solid black;
     border-radius: 10px;
-    height: 100%;
-}
 
-.product:hover {
-    transform: translateY(-5%);
+    &:hover {
+        transform: translateY(-5%);
+    }
 }
 
 .stars {
     display: flex;
     color: orange;
-    font-size: 30px;
+    font-size: 1.875rem;
     width: 1vw;
-}
 
-.stars p {
-    margin: 0;
-    margin-left: 20px;
+    & p {
+        margin: 0;
+        margin-left: 20px;
+    }
 }
 
 .noStar {
     color: lightgray;
 }
 
-article a {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-left: 20px;
-    border-radius: 5px;
-    background-color: #494949;
-    text-decoration: none;
-
-    &:hover {
-        background-color: lightgray;
-    }
-}
-
-
 .articleA {
     padding-bottom: 30px;
-}
-
-article p {
-    width: 20vw;
-}
-
-article p {
-    margin-left: 20px;
-    margin-bottom: 20px;
 }
 
 .checked {
@@ -201,12 +200,11 @@ article p {
 }
 
 
-
 /*section 2 forms*/
 
 h4 {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 
@@ -220,11 +218,11 @@ h4 {
     margin-right: 32vw;
     padding: 0;
 
+    & p {
+        text-align: left;
+    }
 }
 
-.flexAll p {
-    text-align: left;
-}
 
 .flexName {
     display: flex;
@@ -248,7 +246,7 @@ select {
 }
 
 form textarea {
-    width: 100%;
+    width: 36vw;
     height: 20vh;
     border: 0;
     padding: 0;
@@ -261,15 +259,15 @@ form textarea {
     display: flex;
     gap: 10px;
     margin-right: 20px;
-}
 
-.button input {
-    height: 2vh;
+    & input {
+        height: 2vh;
+    }
 }
 
 .Long input,
 select {
-    width: 100%;
+    width: 36vw;
 }
 
 
@@ -278,18 +276,22 @@ select {
     margin-bottom: 20px;
 }
 
+.labelCondition {
+    display: flex;
+    margin-bottom: 20px;
+}
+
 button {
-    width: 100%;
+    width: 36vw;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 5px;
-}
 
-button:hover {
-    background-color: #494949;
-    color: white;
+    &:hover {
+        background-color: #494949;
+        color: white;
+    }
 }
-
 
 label {
     margin-bottom: 5px;
@@ -302,20 +304,20 @@ footer {
     background-color: #494949;
     padding-left: 50px;
     padding-bottom: 50px;
-}
 
-footer img {
-    width: 100px;
-}
+    & img {
+        width: 100px;
+    }
 
-footer p {
-    color: white;
-    margin-top: 0px;
-}
+    & p {
+        color: white;
+        margin-top: 0px;
+    }
 
-footer a {
-    color: white;
-    text-decoration: none;
+    & a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .lasts {
@@ -336,7 +338,6 @@ footer a {
 @media(width <=480px) {
 
     main {
-        width: 100%;
         max-width: 480px;
     }
 
@@ -348,13 +349,17 @@ footer a {
         gap: 0px;
         width: 100%;
         max-width: 480px;
-    }
 
-    nav a {
-        text-align: center;
-        padding-left: 30vw;
-        padding-right: 30vw;
-        margin: 0;
+        & a {
+            text-align: center;
+            padding-left: 30vw;
+            padding-right: 30vw;
+            margin: 0;
+        }
+
+        & img {
+            margin: 0;
+        }
     }
 
     .nintendo a {
@@ -368,25 +373,19 @@ footer a {
         margin-right: 0;
     }
 
-    nav img {
-        margin: 0;
-    }
-
-
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
         height: 120vh;
-    }
 
-    header p {
-        margin-left: 0;
-        margin-right: 0;
-        width: 80%;
+        & p {
+            margin-left: 0;
+            margin-right: 0;
+            width: 80%;
+        }
     }
-
 
     .headerButton {
         display: flex;
@@ -405,12 +404,13 @@ footer a {
         width: 94vw;
         margin-left: 3vw;
         margin-right: 3vw;
+
+        & img {
+            width: 94vw;
+            height: 40vh;
+        }
     }
 
-    .product img {
-        width: 94vw;
-        height: 40vh;
-    }
 
     .products {
         display: flex;
@@ -425,6 +425,10 @@ footer a {
     .flexAll {
         margin-left: 3vw;
         margin-right: 3vw;
+
+        & p {
+            width: 80vw;
+        }
     }
 
     input,
@@ -445,13 +449,37 @@ footer a {
         resize: none;
     }
 
-    .labelButton input {
-        width: 2vw;
-        height: 2vh;
+    .labelButton {
+        & input {
+            width: 3vw;
+            height: 3vh;
+        }
+
+        & label {
+            width: 2vw;
+        }
     }
 
-    .labelButton label {
-        width: 50vw;
+
+    .labelCondition {
+        & input {
+            width: 5vw;
+            height: 5vh;
+        }
+
+        & label {
+            width: 50vw;
+        }
     }
 
+    #footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .lasts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 }
