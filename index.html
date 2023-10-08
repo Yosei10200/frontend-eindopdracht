@@ -12,11 +12,13 @@
     <nav>
         <img src="images/nintendo.png">
         <div class="navigation">
-            <a href="#">begin</a>
-            <a href="#omschrijving">producten</a>
-            <a href="#gerelateerdeProd">contact</a>
-            <a href="#gerelateerdeProd">prijs</a>
-            <a href="#gerelateerdeProd">prijs</a>
+            <a href="#">Begin</a>
+            <a href="#section1">Producten</a>
+            <a href="#section2">Contact</a>
+            <a href="#footer">Algemene voorwaarden</a>
+            <div class="nintendo">
+                <a href="https://store.nintendo.nl/nl">Koop nu</a>
+            </div>
         </div>
     </nav>
     <main>
@@ -36,7 +38,7 @@
                     games</a>
             </div>
         </header>
-        <section class="section1">
+        <section id="section1">
             <h2>
                 products
             </h2>
@@ -52,11 +54,15 @@
                             <p>★</p>
                             <p>★</p>
                             <p>★</p>
-                            <p>★</p>
+                            <p class="noStar">★</p>
                         </div>
-                        <p>aaa</p>
+                        <p class="articleText">De Nintendo 3DS is de opvolger van de vorige DS modellen en heeft een
+                            nieuwe functie waarmee
+                            je 3D beelden kunt zien zonder een speciale bril.</p>
                         <div class="articleA">
-                            <a href="#">begin</a>
+                            <a
+                                href="https://www.google.com/search?sca_esv=571701597&sxsrf=AM9HkKnsgHwG8ZAWAK-i_5KJOnsTti1BsQ:1696762006045&q=nintendo+3ds&tbm=shop&source=lnms&sa=X&sqi=2&ved=2ahUKEwifsI2Fo-aBAxVShP0HHbobDXQQ0pQJegQIDRAB&biw=1536&bih=707&dpr=1.25">browse
+                                shop</a>
                         </div>
                     </div>
                 </article>
@@ -73,9 +79,12 @@
                             <p>★</p>
                             <p>★</p>
                         </div>
-                        <p>aaa</p>
+                        <p class="articleText">De Nintendo Switch is een hybride gameconsole die is uitgebracht door
+                            Nintendo. Het is makkelijk draagbaar maar thuis is het ook te gebruiken.</p>
                         <div class="articleA">
-                            <a href="#">begin</a>
+                            <a
+                                href="https://www.google.com/search?sca_esv=571701597&hl=nl&sxsrf=AM9HkKmHF_J3jpeRgzNtM7nKFry81NfKgA:1696762054050&q=nintendo+switch&tbm=shop&source=lnms&sa=X&ved=2ahUKEwjOwv-bo-aBAxVvhf0HHVK-D7gQ0pQJegQIDRAB&biw=1536&bih=707&dpr=1.25">browse
+                                shop</a>
                         </div>
                     </div>
                 </article>
@@ -89,18 +98,22 @@
                             <p>★</p>
                             <p>★</p>
                             <p>★</p>
-                            <p>★</p>
-                            <p>★</p>
+                            <p class="noStar">★</p>
+                            <p class="noStar">★</p>
                         </div>
-                        <p>aaa</p>
+                        <p class="articleText">De Wii is een gameconsole van Nintendo die oorspronkelijk werd
+                            uitgebracht in 2006. Het heeft
+                            unieke controllers met sensoren die beweging detecteren.</p>
                         <div class="articleA">
-                            <a href="#">begin</a>
+                            <a
+                                href="https://www.google.com/search?sca_esv=571701597&sxsrf=AM9HkKn6kFDyi2qRE5kgccf6XUQJt_s46w:1696762069951&q=wii&tbm=shop&source=lnms&sa=X&ved=2ahUKEwiHjsqjo-aBAxVzhP0HHRTHDXsQ0pQJegQIChAB&biw=1536&bih=707&dpr=1.25">browse
+                                shop</a>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
-        <section>
+        <section id="section2">
             <h4>
                 Form
             </h4>
@@ -109,33 +122,41 @@
                     <div class="flexName">
                         <div class="labelInput">
                             <label for="first-name">Voornaam</label>
-                            <input type="text" id="first-name" name="first-name" required placeholder="Voornaam">
+                            <input type="text" id="first-name" name="first-name" required placeholder=" Voornaam">
                         </div>
                         <div class="labelInput">
                             <label for="second-name">Achternaam</label>
-                            <input type="text" id="second-name" name="second-name" required placeholder="Achternaam">
+                            <input type="text" id="second-name" name="second-name" required placeholder=" Achternaam">
                         </div>
                     </div>
                     <div class="labelInput">
                         <label for="email">Email</label>
                         <div class="Long">
-                            <input type="email" id="email" name="email" required placeholder="Email">
+                            <input type="email" id="email" name="email" required placeholder=" Email">
                         </div>
                     </div>
                     <div class="flexName">
                         <div class="labelInput">
                             <label for="living">Woonplaats</label>
-                            <input type="text" id="living" name="living" required placeholder="Woonplaats">
+                            <input type="text" id="living" name="living" required placeholder=" Woonplaats">
                         </div>
                         <div class="labelInput">
                             <label for="birthday">Geboortedatum</label>
-                            <input type="date" id="birthday" name="birthday" required placeholder="Geboortedatum">
+                            <input type="date" id="birthday" name="birthday" required placeholder=" Geboortedatum">
                         </div>
                     </div>
                     <div class="labelInput">
                         <label for="subject">Onderwerp</label>
                         <div class="Long">
-                            <input type="subject" id="subject" name="subject" required placeholder="Onderwerp">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Kies onderwerp van het bericht...</option>
+                                <option value="question">
+                                    Vraag
+                                </option>
+                                <option value="comment">
+                                    Opmerking
+                                </option>
+                            </select>
                         </div>
                     </div>
                     <div class="labelInput">
@@ -167,21 +188,25 @@
                 </div>
             </form>
         </section>
-        <footer>
+        <footer id="footer">
             <img src="images/nintendo.png">
-            <div class="lasts">
-                <a href="#">Privacyverklaring</a>
-                <a href="#">Algemene voorwaarden</a>
-                <a href="#">Cookiebeleid</a>
-                <a href="#">Contact</a>
+            <div class="footer3">
+                <div class="lasts">
+                    <a href="#">Privacyverklaring</a>
+                    <a href="#">Algemene voorwaarden</a>
+                    <a href="#">Cookiebeleid</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
-            <p>
-                copyright 2023 Nintendo
-            </p>
-            <div class="logos">
-                <img src="images/insta.png">
-                <img src="images/facebook.png">
-                <img src="images/snapchat.png">
+            <div class="footer2">
+                <p>
+                    copyright 2023 Nintendo
+                </p>
+                <div class="logos">
+                    <img src="images/insta.png">
+                    <img src="images/facebook.png">
+                    <img src="images/snapchat.png">
+                </div>
             </div>
         </footer>
     </main>

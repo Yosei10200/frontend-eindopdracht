@@ -21,7 +21,6 @@ section {
 nav {
     background-color: white;
     gap: 600px;
-    border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
 }
@@ -41,6 +40,7 @@ nav a {
     margin-bottom: 26px;
     border-radius: 10px;
     text-decoration: none;
+    color: black;
 }
 
 nav a:hover {
@@ -50,6 +50,12 @@ nav a:hover {
 .navigation {
     display: flex;
     margin-right: 100px;
+}
+
+.nintendo a {
+    display: flex;
+    background-color: #494949;
+    color: white;
 }
 
 /*header*/
@@ -62,6 +68,7 @@ header {
     background-size: cover;
     height: 85vh;
     border-bottom: black solid;
+    border-top: 2px solid black;
 }
 
 h1 {
@@ -104,6 +111,7 @@ h2 {
 
 h3 {
     margin: 10px;
+    margin-left: 20px;
 
 }
 
@@ -115,7 +123,7 @@ h3 {
 
 article img {
     height: 20vh;
-    width: 20vw;
+    width: 22vw;
     margin-top: 10px;
     margin-bottom: 10px;
     object-fit: contain;
@@ -130,7 +138,7 @@ article img {
     flex-direction: column;
     border: 2px solid black;
     border-radius: 10px;
-
+    height: 100%;
 }
 
 .product:hover {
@@ -138,8 +146,19 @@ article img {
 }
 
 .stars {
-    margin: 10px;
     display: flex;
+    color: orange;
+    font-size: 30px;
+    width: 1vw;
+}
+
+.stars p {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.noStar {
+    color: lightgray;
 }
 
 article a {
@@ -148,18 +167,27 @@ article a {
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin-left: 20px;
     border-radius: 5px;
     background-color: #494949;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lightgray;
+    }
 }
+
 
 .articleA {
     padding-bottom: 30px;
 }
 
 article p {
-    margin-left: 10px;
+    width: 20vw;
+}
+
+article p {
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -168,9 +196,11 @@ article p {
 
 }
 
-.section1 {
+#section1 {
     background-color: white;
 }
+
+
 
 /*section 2 forms*/
 
@@ -208,7 +238,8 @@ h4 {
     flex-direction: column;
 }
 
-input {
+input,
+select {
     padding: 0;
     border: 0;
     border: 2px solid lightgray;
@@ -236,9 +267,11 @@ form textarea {
     height: 2vh;
 }
 
-.Long input {
+.Long input,
+select {
     width: 100%;
 }
+
 
 .labelButton {
     display: flex;
@@ -256,6 +289,12 @@ button:hover {
     background-color: #494949;
     color: white;
 }
+
+
+label {
+    margin-bottom: 5px;
+}
+
 
 
 /*footer*/
@@ -295,19 +334,31 @@ footer a {
 
 
 @media(width <=480px) {
+
+    main {
+        width: 100%;
+        max-width: 480px;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
         gap: 0px;
+        width: 100%;
+        max-width: 480px;
     }
 
     nav a {
         text-align: center;
-        padding-left: 40vw;
-        padding-right: 40vw;
+        padding-left: 30vw;
+        padding-right: 30vw;
         margin: 0;
+    }
+
+    .nintendo a {
+        justify-content: center;
     }
 
     .navigation {
@@ -326,7 +377,8 @@ footer a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 85vh;
+        margin-top: 10px;
+        height: 120vh;
     }
 
     header p {
@@ -350,11 +402,56 @@ footer a {
     }
 
     .product {
-        width: 90%;
+        width: 94vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .product img {
+        width: 94vw;
+        height: 40vh;
     }
 
     .products {
         display: flex;
         flex-direction: column;
     }
+
+    .articleText {
+        width: 86vw;
+        margin-right: 20px;
+    }
+
+    .flexAll {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    input,
+    .Long input,
+    select,
+    button {
+        width: 94vw;
+        height: 3rem;
+    }
+
+    form textarea {
+        width: 94vw;
+        height: 20vh;
+        border: 0;
+        padding: 0;
+        border: 2px solid lightgray;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .labelButton input {
+        width: 2vw;
+        height: 2vh;
+    }
+
+    .labelButton label {
+        width: 50vw;
+    }
+
 }
