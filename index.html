@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,10 +26,15 @@
             </h1>
             <p>
                 Welkom op de site over Nintendo consoles! Hier vind je de uitleg en reviews over de consoles zodat je
-                precies weet welke je wilt halen.
+                precies weet welke je wilt halen. Klik hieronder als je naar de officiele site van Nintendo wilt of als
+                je naar meer producten wilt kijken.
             </p>
-            <a href="#">begin</a>
-            <a href="#">begin</a>
+            <div class="headerButton">
+                <a href="https://www.nintendo.nl/">Officiele Site</a>
+                <a
+                    href="https://www.google.com/search?sca_esv=571618306&sxsrf=AM9HkKkC7sD9yA2RJZZsvbwR0UTHnBKe4A:1696712965077&q=nintendo&tbm=shop&source=lnms&sa=X&ved=2ahUKEwizxsas7OSBAxXlxQIHHUtLCDcQ0pQJegQIDRAB&biw=1536&bih=707&dpr=1.25">Meer
+                    games</a>
+            </div>
         </header>
         <section class="section1">
             <h2>
@@ -44,14 +48,16 @@
                             Nintendo 3DS
                         </h3>
                         <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
                         </div>
-                        aaa
-                        <a href="#">begin</a>
+                        <p>aaa</p>
+                        <div class="articleA">
+                            <a href="#">begin</a>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -61,14 +67,16 @@
                             Nintendo Switch
                         </h3>
                         <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
                         </div>
-                        aaa
-                        <a href="#">begin</a>
+                        <p>aaa</p>
+                        <div class="articleA">
+                            <a href="#">begin</a>
+                        </div>
                     </div>
                 </article>
                 <article>
@@ -78,14 +86,16 @@
                             Nintendo Wii
                         </h3>
                         <div class="stars">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
+                            <p>★</p>
                         </div>
-                        aaa
-                        <a href="#">begin</a>
+                        <p>aaa</p>
+                        <div class="articleA">
+                            <a href="#">begin</a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -95,18 +105,85 @@
                 Form
             </h4>
             <form>
-                <div class="flexName">
-                    <div class="labelInput">
-                        <label for="first-name">Voornaam</label>
-                        <input type="text" id="first-name" name="first-name" required placeholder="Voornaam">
+                <div class="flexAll">
+                    <div class="flexName">
+                        <div class="labelInput">
+                            <label for="first-name">Voornaam</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="Voornaam">
+                        </div>
+                        <div class="labelInput">
+                            <label for="second-name">Achternaam</label>
+                            <input type="text" id="second-name" name="second-name" required placeholder="Achternaam">
+                        </div>
                     </div>
                     <div class="labelInput">
-                        <label for="second-name">Achternaam</label>
-                        <input type="text" id="second-name" name="second-name" required placeholder="Achternaam">
+                        <label for="email">Email</label>
+                        <div class="Long">
+                            <input type="email" id="email" name="email" required placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="flexName">
+                        <div class="labelInput">
+                            <label for="living">Woonplaats</label>
+                            <input type="text" id="living" name="living" required placeholder="Woonplaats">
+                        </div>
+                        <div class="labelInput">
+                            <label for="birthday">Geboortedatum</label>
+                            <input type="date" id="birthday" name="birthday" required placeholder="Geboortedatum">
+                        </div>
+                    </div>
+                    <div class="labelInput">
+                        <label for="subject">Onderwerp</label>
+                        <div class="Long">
+                            <input type="subject" id="subject" name="subject" required placeholder="Onderwerp">
+                        </div>
+                    </div>
+                    <div class="labelInput">
+                        <label for="message">Bericht</label>
+                        <div class="message">
+                            <textarea type="message" id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+                    <p>inschrijven voor nieuwsbrief?</p>
+                    <div class="labelButton">
+                        <div class="button">
+                            <input type="radio" id="yes" name="yes" value="yes" required>
+                            <label for="yes">Ja</label>
+                        </div>
+                        <div class="button">
+                            <input type="radio" id="no" name="no" value="no" required>
+                            <label for="no">Nee</label>
+                        </div>
+                    </div>
+                    <div class="labelButton">
+                        <div class="button">
+                            <input type="checkbox" id="conditions" name="conditions" value="conditions" required>
+                            <label for="conditions">Ik ga akkoord met de algemene voorwaarden</label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">Submit</button>
                     </div>
                 </div>
             </form>
         </section>
+        <footer>
+            <img src="images/nintendo.png">
+            <div class="lasts">
+                <a href="#">Privacyverklaring</a>
+                <a href="#">Algemene voorwaarden</a>
+                <a href="#">Cookiebeleid</a>
+                <a href="#">Contact</a>
+            </div>
+            <p>
+                copyright 2023 Nintendo
+            </p>
+            <div class="logos">
+                <img src="images/insta.png">
+                <img src="images/facebook.png">
+                <img src="images/snapchat.png">
+            </div>
+        </footer>
     </main>
 </body>
 
